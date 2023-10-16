@@ -29,7 +29,9 @@ Port number: 80
 ![tcp_3](./assets/images/tcp_3.png)
 
 ```
-Sequence Number (raw): 4236649187
+Sequence number (raw) : 4236649187
+Look at the flags in the TCP Control Bits to identify a segment as a SYN segment
+To determine if the TCP receiver will use Selective Acknowledgments, check the TCP options field in the initial SYN segment to see if it contains the SACK Permitted option. If it's present, then SACK is supported in that session.
 ```
 
 ### TCP Number 4
